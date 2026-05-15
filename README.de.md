@@ -31,6 +31,17 @@ Aktuelles Ziel:
 
 ## Schnellstart
 
+### Installation per Git
+
+```bash
+git clone https://github.com/fabiangold/copilot-key-oracle.git
+cd copilot-key-oracle
+chmod +x install.sh
+sudo ./install.sh
+```
+
+### Installation aus heruntergeladenen Dateien
+
 ```bash
 chmod +x install.sh
 sudo ./install.sh

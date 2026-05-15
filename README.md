@@ -31,6 +31,17 @@ Current target:
 
 ## Quick start
 
+### Install from Git
+
+```bash
+git clone https://github.com/fabiangold/copilot-key-oracle.git
+cd copilot-key-oracle
+chmod +x install.sh
+sudo ./install.sh
+```
+
+### Install from downloaded files
+
 ```bash
 chmod +x install.sh
 sudo ./install.sh
