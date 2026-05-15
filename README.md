@@ -1,6 +1,6 @@
 # Copilot Key Oracle
 
-> English | [Deutsch](./README.de.md) | [Español](./README.es.md) | [Français](./README.fr.md) | [Português](./README.pt.md) | [Polski](./README.pl.md)
+> English | [Deutsch](./docs/README.de.md) | [Español](./docs/README.es.md) | [Français](./docs/README.fr.md) | [Português](./docs/README.pt.md) | [Polski](./docs/README.pl.md)
 
 ⚡ Turn the Dell Copilot key into a launcher for any app, URL, or command on Linux.
 
@@ -17,14 +17,23 @@ sudo ./install.sh
 
 💬 Discord: [fg-dev](https://discord.gg/fg-dev)
 
+## Layout
+
+- `install.sh` - wrapper for the real installer
+- `uninstall.sh` - wrapper for the real uninstaller
+- `scripts/` - implementation scripts
+- `examples/` - sample config files
+- `docs/` - all translated READMEs
+- `LICENSE` - project license
+
 ## Language versions
 
 - English: this file
-- German: `README.de.md`
-- Spanish: `README.es.md`
-- French: `README.fr.md`
-- Portuguese: `README.pt.md`
-- Polish: `README.pl.md`
+- German: `docs/README.de.md`
+- Spanish: `docs/README.es.md`
+- French: `docs/README.fr.md`
+- Portuguese: `docs/README.pt.md`
+- Polish: `docs/README.pl.md`
 
 ## Why this repo exists
 
@@ -112,8 +121,10 @@ sudo ./uninstall.sh
 
 ## Files
 
-- `install.sh` - installs and wires up the mapping
-- `uninstall.sh` - removes the mapping and launcher
-- `keyd-default.conf.example` - reference config
-- `README.de.md` - German guide
+- `install.sh` - entrypoint wrapper
+- `uninstall.sh` - entrypoint wrapper
+- `scripts/install.sh` - installs and wires up the mapping
+- `scripts/uninstall.sh` - removes the mapping and launcher
+- `examples/keyd-default.conf.example` - reference config
+- `docs/README.de.md` - German guide
 - `README.md` - this guide
