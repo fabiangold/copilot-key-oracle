@@ -31,7 +31,10 @@ sudo ./install.sh
 ## Packages
 
 - Debian package: download the `.deb` from [Releases](https://github.com/fabiangold/copilot-key-oracle/releases)
+- Source archive: download the `.tar.gz` from [Releases](https://github.com/fabiangold/copilot-key-oracle/releases)
 - Source install: use `install.sh`
+
+> Note: this repo ships packages via GitHub Releases, not the GitHub Packages tab.
 
 ## Build from source package
 
