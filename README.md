@@ -1,6 +1,6 @@
 # Copilot Key Oracle
 
-> English | [Deutsch](./docs/README.de.md) | [Español](./docs/README.es.md) | [Français](./docs/README.fr.md) | [Português](./docs/README.pt.md) | [Polski](./docs/README.pl.md) | [Translations](./TRANSLATIONS.md)
+> 🌐 English | [🇩🇪 Deutsch](./docs/README.de.md) | [🇪🇸 Español](./docs/README.es.md) | [🇫🇷 Français](./docs/README.fr.md) | [🇵🇹 Português](./docs/README.pt.md) | [🇵🇱 Polski](./docs/README.pl.md) | [📚 Translations](./TRANSLATIONS.md)
 
 ⚡ Turn the Dell Copilot key into a launcher for any app, URL, or command on Linux.
 
@@ -51,15 +51,6 @@ bash packaging/deb/build.sh
 - `packaging/` - package build helpers
 - `docs/` - all translated READMEs
 - `LICENSE` - project license
-
-## Language versions
-
-- English: this file
-- German: `docs/README.de.md`
-- Spanish: `docs/README.es.md`
-- French: `docs/README.fr.md`
-- Portuguese: `docs/README.pt.md`
-- Polish: `docs/README.pl.md`
 
 ## Why this repo exists
 
@@ -144,14 +135,4 @@ sudo ./uninstall.sh
 - If Settings opens instead of your app, clear GNOME conflicts in `gsettings` and restart `keyd`.
 - If nothing happens, verify the combo with `sudo keyd monitor`.
 - If the app only opens while a terminal is open, the launcher is not using the user session correctly.
-
-## Files
-
-- `install.sh` - entrypoint wrapper
-- `uninstall.sh` - entrypoint wrapper
-- `scripts/install.sh` - installs and wires up the mapping
-- `scripts/uninstall.sh` - removes the mapping and launcher
-- `packaging/deb/build.sh` - builds the Debian package
-- `examples/keyd-default.conf.example` - reference config
-- `docs/README.de.md` - German guide
-- `README.md` - this guide
+- Need help? Ask in Discord: [fg-dev](https://discord.gg/fg-dev)

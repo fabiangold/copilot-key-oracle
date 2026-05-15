@@ -1,10 +1,11 @@
 # Copilot Key Oracle
 
-> Français | [English](../README.md) | [Deutsch](./README.de.md) | [Español](./README.es.md) | [Português](./README.pt.md) | [Polski](./README.pl.md) | [Translations](../TRANSLATIONS.md)
+> 🌐 Français | [🇬🇧 English](../README.md) | [🇩🇪 Deutsch](./README.de.md) | [🇪🇸 Español](./README.es.md) | [🇵🇹 Português](./README.pt.md) | [🇵🇱 Polski](./README.pl.md) | [📚 Translations](../TRANSLATIONS.md)
 
 ⚡ Transforme la touche Copilot Dell en lanceur pour n'importe quelle application, URL ou commande sous Linux.
 
 [![Release](https://img.shields.io/github/v/release/fabiangold/copilot-key-oracle)](https://github.com/fabiangold/copilot-key-oracle/releases)
+[![Downloads](https://img.shields.io/github/downloads/fabiangold/copilot-key-oracle/total)](https://github.com/fabiangold/copilot-key-oracle/releases)
 
 ## Aperçu
 
@@ -50,15 +51,6 @@ bash packaging/deb/build.sh
 - `packaging/` - aide à la construction des paquets
 - `docs/` - toutes les traductions
 - `LICENSE` - licence du projet
-
-## Versions linguistiques
-
-- English: `../README.md`
-- Deutsch: `README.de.md`
-- Español: `README.es.md`
-- Français: ce fichier
-- Português: `README.pt.md`
-- Polski: `README.pl.md`
 
 ## Pourquoi ce repo existe
 
@@ -143,13 +135,4 @@ sudo ./uninstall.sh
 - Si les Paramètres s'ouvrent à la place de ton app, supprime les conflits GNOME dans `gsettings` et redémarre `keyd`.
 - Si rien ne se passe, vérifie la combinaison avec `sudo keyd monitor`.
 - Si l'app ne s'ouvre que lorsque le terminal est ouvert, le lanceur n'utilise pas correctement la session utilisateur.
-
-## Fichiers
-
-- `install.sh` - point d'entrée pour l'installateur
-- `uninstall.sh` - point d'entrée pour le désinstallateur
-- `scripts/install.sh` - installe et relie le mapping
-- `scripts/uninstall.sh` - supprime le mapping et le lanceur
-- `packaging/deb/build.sh` - construit le paquet Debian
-- `examples/keyd-default.conf.example` - configuration de référence
-- `README.md` - page principale en anglais
+- Besoin d'aide ? Demande sur Discord : [fg-dev](https://discord.gg/fg-dev)

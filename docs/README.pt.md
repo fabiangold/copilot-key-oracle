@@ -1,10 +1,11 @@
 # Copilot Key Oracle
 
-> Português | [English](../README.md) | [Deutsch](./README.de.md) | [Español](./README.es.md) | [Français](./README.fr.md) | [Polski](./README.pl.md) | [Translations](../TRANSLATIONS.md)
+> 🌐 Português | [🇬🇧 English](../README.md) | [🇩🇪 Deutsch](./README.de.md) | [🇪🇸 Español](./README.es.md) | [🇫🇷 Français](./README.fr.md) | [🇵🇱 Polski](./README.pl.md) | [📚 Translations](../TRANSLATIONS.md)
 
 ⚡ Transforme a tecla Copilot da Dell em um launcher para qualquer app, URL ou comando no Linux.
 
 [![Release](https://img.shields.io/github/v/release/fabiangold/copilot-key-oracle)](https://github.com/fabiangold/copilot-key-oracle/releases)
+[![Downloads](https://img.shields.io/github/downloads/fabiangold/copilot-key-oracle/total)](https://github.com/fabiangold/copilot-key-oracle/releases)
 
 ## Previa
 
@@ -50,15 +51,6 @@ bash packaging/deb/build.sh
 - `packaging/` - ajuda para gerar pacotes
 - `docs/` - todas as traduções
 - `LICENSE` - licença do projeto
-
-## Versoes de idioma
-
-- English: `../README.md`
-- Deutsch: `README.de.md`
-- Español: `README.es.md`
-- Français: `README.fr.md`
-- Português: este arquivo
-- Polski: `README.pl.md`
 
 ## Por que este repo existe
 
@@ -143,13 +135,4 @@ sudo ./uninstall.sh
 - Se abrir Configuracoes em vez do app, limpe conflitos do GNOME em `gsettings` e reinicie o `keyd`.
 - Se nada acontecer, verifique a combinacao com `sudo keyd monitor`.
 - Se o app so abrir com o terminal aberto, o launcher nao esta usando corretamente a sessao do usuario.
-
-## Arquivos
-
-- `install.sh` - ponto de entrada do instalador
-- `uninstall.sh` - ponto de entrada do desinstalador
-- `scripts/install.sh` - instala e conecta o mapeamento
-- `scripts/uninstall.sh` - remove o mapeamento e o launcher
-- `packaging/deb/build.sh` - gera o pacote Debian
-- `examples/keyd-default.conf.example` - configuracao de referencia
-- `README.md` - pagina principal em ingles
+- Precisa de ajuda? Pergunte no Discord: [fg-dev](https://discord.gg/fg-dev)

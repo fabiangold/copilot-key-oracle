@@ -1,10 +1,11 @@
 # Copilot Key Oracle
 
-> Español | [English](../README.md) | [Deutsch](./README.de.md) | [Français](./README.fr.md) | [Português](./README.pt.md) | [Polski](./README.pl.md) | [Translations](../TRANSLATIONS.md)
+> 🌐 Español | [🇬🇧 English](../README.md) | [🇩🇪 Deutsch](./README.de.md) | [🇫🇷 Français](./README.fr.md) | [🇵🇹 Português](./README.pt.md) | [🇵🇱 Polski](./README.pl.md) | [📚 Translations](../TRANSLATIONS.md)
 
 ⚡ Convierte la tecla Copilot de Dell en un lanzador para cualquier app, URL o comando en Linux.
 
 [![Release](https://img.shields.io/github/v/release/fabiangold/copilot-key-oracle)](https://github.com/fabiangold/copilot-key-oracle/releases)
+[![Downloads](https://img.shields.io/github/downloads/fabiangold/copilot-key-oracle/total)](https://github.com/fabiangold/copilot-key-oracle/releases)
 
 ## Vista previa
 
@@ -50,15 +51,6 @@ bash packaging/deb/build.sh
 - `packaging/` - ayuda para construir paquetes
 - `docs/` - todas las traducciones
 - `LICENSE` - licencia del proyecto
-
-## Versiones de idioma
-
-- English: `../README.md`
-- Deutsch: `README.de.md`
-- Español: este archivo
-- Français: `README.fr.md`
-- Português: `README.pt.md`
-- Polski: `README.pl.md`
 
 ## Por qué existe este repo
 
@@ -143,13 +135,4 @@ sudo ./uninstall.sh
 - Si se abre Configuración en lugar de tu app, limpia conflictos de GNOME en `gsettings` y reinicia `keyd`.
 - Si no pasa nada, verifica la combinación con `sudo keyd monitor`.
 - Si la app solo abre con el terminal abierto, el launcher no está usando correctamente la sesión de usuario.
-
-## Archivos
-
-- `install.sh` - punto de entrada para el instalador
-- `uninstall.sh` - punto de entrada para el desinstalador
-- `scripts/install.sh` - instala y conecta el mapeo
-- `scripts/uninstall.sh` - elimina el mapeo y el launcher
-- `packaging/deb/build.sh` - construye el paquete Debian
-- `examples/keyd-default.conf.example` - configuración de referencia
-- `README.md` - página principal en inglés
+- ¿Necesitas ayuda? Pregunta en Discord: [fg-dev](https://discord.gg/fg-dev)
