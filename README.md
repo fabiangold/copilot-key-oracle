@@ -4,6 +4,19 @@
 
 Turn the Dell Copilot key into a launcher for any app, URL, or command on Linux.
 
+## TL;DR
+
+```bash
+git clone https://github.com/fabiangold/copilot-key-oracle.git
+cd copilot-key-oracle
+chmod +x install.sh
+sudo ./install.sh
+```
+
+## Useful for
+
+Most relevant communities: English, German, Spanish, French, Portuguese, Polish.
+
 ## Why this repo exists
 
 This machine-specific setup documents the exact path that worked on a Dell XPS under Zorin/GNOME.

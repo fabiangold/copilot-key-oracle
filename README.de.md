@@ -4,6 +4,19 @@
 
 Verwandle die Dell-Copilot-Taste unter Linux in einen Startknopf fuer beliebige Apps, URLs oder Befehle.
 
+## TL;DR
+
+```bash
+git clone https://github.com/fabiangold/copilot-key-oracle.git
+cd copilot-key-oracle
+chmod +x install.sh
+sudo ./install.sh
+```
+
+## Relevant fuer
+
+Besonders interessant fuer Communities auf: Englisch, Deutsch, Spanisch, Franzoesisch, Portugiesisch, Polnisch.
+
 ## Warum dieses Repo existiert
 
 Diese machine-spezifische Loesung dokumentiert den exakten Weg, der auf einem Dell XPS unter Zorin/GNOME funktioniert hat.
