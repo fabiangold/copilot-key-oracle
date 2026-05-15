@@ -1,6 +1,6 @@
 # Copilot Key Oracle
 
-> Deutsch | [English](./README.md)
+> Deutsch | [English](./README.md) | [Español](./README.es.md) | [Français](./README.fr.md) | [Português](./README.pt.md) | [Polski](./README.pl.md)
 
 Verwandle die Dell-Copilot-Taste unter Linux in einen Startknopf fuer beliebige Apps, URLs oder Befehle.
 
@@ -13,9 +13,14 @@ chmod +x install.sh
 sudo ./install.sh
 ```
 
-## Relevant fuer
+## Sprachversionen
 
-Besonders interessant fuer Communities auf: Englisch, Deutsch, Spanisch, Franzoesisch, Portugiesisch, Polnisch.
+- English: `README.md`
+- Deutsch: diese Datei
+- Spanisch: `README.es.md`
+- Franzoesisch: `README.fr.md`
+- Portugiesisch: `README.pt.md`
+- Polnisch: `README.pl.md`
 
 ## Warum dieses Repo existiert
 

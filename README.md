@@ -1,6 +1,6 @@
 # Copilot Key Oracle
 
-> [Deutsch](./README.de.md) | English
+> English | [Deutsch](./README.de.md) | [Español](./README.es.md) | [Français](./README.fr.md) | [Português](./README.pt.md) | [Polski](./README.pl.md)
 
 Turn the Dell Copilot key into a launcher for any app, URL, or command on Linux.
 
@@ -13,9 +13,14 @@ chmod +x install.sh
 sudo ./install.sh
 ```
 
-## Useful for
+## Language versions
 
-Most relevant communities: English, German, Spanish, French, Portuguese, Polish.
+- English: this file
+- German: `README.de.md`
+- Spanish: `README.es.md`
+- French: `README.fr.md`
+- Portuguese: `README.pt.md`
+- Polish: `README.pl.md`
 
 ## Why this repo exists
 
