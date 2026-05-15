@@ -1,10 +1,18 @@
 # Copilot Key Oracle
 
-> Deutsch | [English](../README.md) | [Español](./README.es.md) | [Français](./README.fr.md) | [Português](./README.pt.md) | [Polski](./README.pl.md)
+> Deutsch | [English](../README.md) | [Español](./README.es.md) | [Français](./README.fr.md) | [Português](./README.pt.md) | [Polski](./README.pl.md) | [Übersetzungen](../TRANSLATIONS.md)
 
 ⚡ Verwandle die Dell-Copilot-Taste unter Linux in einen Startknopf fuer beliebige Apps, URLs oder Befehle.
 
 [![Release](https://img.shields.io/github/v/release/fabiangold/copilot-key-oracle)](https://github.com/fabiangold/copilot-key-oracle/releases)
+
+## Vorschau
+
+```text
+Copilot-Taste -> keyd -> User-Session-Launcher -> deine App
+```
+
+![Ablaufdiagramm](./assets/flow.svg)
 
 ## TL;DR
 
@@ -18,11 +26,6 @@ sudo ./install.sh
 ## Community
 
 💬 Discord: [fg-dev](https://discord.gg/fg-dev)
-
-## Pakete
-
-- Debian-Paket: lade die `.deb`-Datei aus den [Releases](https://github.com/fabiangold/copilot-key-oracle/releases) herunter
-- Source-Install: nutze `install.sh`
 
 ## Pakete
 

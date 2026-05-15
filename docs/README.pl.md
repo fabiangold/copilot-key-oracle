@@ -4,6 +4,16 @@
 
 ⚡ Zamien klawisz Copilot z Dell w uruchamiacz dowolnej aplikacji, URL lub polecenia w Linux.
 
+[![Release](https://img.shields.io/github/v/release/fabiangold/copilot-key-oracle)](https://github.com/fabiangold/copilot-key-oracle/releases)
+
+## Podglad
+
+```text
+Klawisz Copilot -> keyd -> launcher uzytkownika -> twoja aplikacja
+```
+
+![Diagram przeplywu](./assets/flow.svg)
+
 ## TL;DR
 
 ```bash
@@ -16,6 +26,11 @@ sudo ./install.sh
 ## Spolecznosc
 
 💬 Discord: [fg-dev](https://discord.gg/fg-dev)
+
+## Pakiety
+
+- Pakiet Debian: pobierz `.deb` z [Releases](https://github.com/fabiangold/copilot-key-oracle/releases)
+- Instalacja ze zrodel: uzyj `install.sh`
 
 ## Pakiety
 

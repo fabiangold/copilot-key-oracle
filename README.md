@@ -1,11 +1,19 @@
 # Copilot Key Oracle
 
-> English | [Deutsch](./docs/README.de.md) | [Español](./docs/README.es.md) | [Français](./docs/README.fr.md) | [Português](./docs/README.pt.md) | [Polski](./docs/README.pl.md)
+> English | [Deutsch](./docs/README.de.md) | [Español](./docs/README.es.md) | [Français](./docs/README.fr.md) | [Português](./docs/README.pt.md) | [Polski](./docs/README.pl.md) | [Translations](./TRANSLATIONS.md)
 
 ⚡ Turn the Dell Copilot key into a launcher for any app, URL, or command on Linux.
 
 [![Release](https://img.shields.io/github/v/release/fabiangold/copilot-key-oracle)](https://github.com/fabiangold/copilot-key-oracle/releases)
 [![Downloads](https://img.shields.io/github/downloads/fabiangold/copilot-key-oracle/total)](https://github.com/fabiangold/copilot-key-oracle/releases)
+
+## Preview
+
+```text
+Copilot key -> keyd -> user session launcher -> your app
+```
+
+![Flow diagram](./docs/assets/flow.svg)
 
 ## TL;DR
 
@@ -24,6 +32,12 @@ sudo ./install.sh
 
 - Debian package: download the `.deb` from [Releases](https://github.com/fabiangold/copilot-key-oracle/releases)
 - Source install: use `install.sh`
+
+## Build from source package
+
+```bash
+bash packaging/deb/build.sh
+```
 
 ## Layout
 

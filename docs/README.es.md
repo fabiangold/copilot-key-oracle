@@ -4,6 +4,16 @@
 
 ⚡ Convierte la tecla Copilot de Dell en un lanzador para cualquier app, URL o comando en Linux.
 
+[![Release](https://img.shields.io/github/v/release/fabiangold/copilot-key-oracle)](https://github.com/fabiangold/copilot-key-oracle/releases)
+
+## Vista previa
+
+```text
+Tecla Copilot -> keyd -> lanzador de usuario -> tu app
+```
+
+![Diagrama de flujo](./assets/flow.svg)
+
 ## TL;DR
 
 ```bash
@@ -16,6 +26,11 @@ sudo ./install.sh
 ## Comunidad
 
 💬 Discord: [fg-dev](https://discord.gg/fg-dev)
+
+## Paquetes
+
+- Paquete Debian: descarga el `.deb` desde los [Releases](https://github.com/fabiangold/copilot-key-oracle/releases)
+- Instalación desde código: usa `install.sh`
 
 ## Paquetes
 

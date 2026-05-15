@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="220" viewBox="0 0 960 220" role="img" aria-label="Copilot key flow diagram">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <style>
+      .box { fill: #111827; stroke: #334155; stroke-width: 2; rx: 18; }
+      .label { fill: #e5e7eb; font: 600 18px system-ui, -apple-system, Segoe UI, sans-serif; }
+      .small { fill: #94a3b8; font: 14px system-ui, -apple-system, Segoe UI, sans-serif; }
+      .arrow { stroke: #06b6d4; stroke-width: 4; fill: none; marker-end: url(#m); }
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#06b6d4"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="960" height="220" rx="24" fill="url(#bg)"/>
+  <rect x="40" y="62" width="160" height="96" class="box"/>
+  <rect x="280" y="62" width="160" height="96" class="box"/>
+  <rect x="520" y="62" width="160" height="96" class="box"/>
+  <rect x="760" y="62" width="160" height="96" class="box"/>
+
+  <path d="M200 110 L280 110" class="arrow"/>
+  <path d="M440 110 L520 110" class="arrow"/>
+  <path d="M680 110 L760 110" class="arrow"/>
+
+  <text x="120" y="103" text-anchor="middle" class="label">Copilot key</text>
+  <text x="120" y="130" text-anchor="middle" class="small">Dell XPS</text>
+
+  <text x="360" y="103" text-anchor="middle" class="label">keyd</text>
+  <text x="360" y="130" text-anchor="middle" class="small">maps combo</text>
+
+  <text x="600" y="103" text-anchor="middle" class="label">launcher</text>
+  <text x="600" y="130" text-anchor="middle" class="small">user session</text>
+
+  <text x="840" y="103" text-anchor="middle" class="label">your app</text>
+  <text x="840" y="130" text-anchor="middle" class="small">Claude / anything</text>
+</svg>
