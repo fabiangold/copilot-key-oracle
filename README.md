@@ -1,37 +1,42 @@
 # Copilot Key Oracle
 
-Map the Dell Copilot key on Linux to any app, URL, or launcher.
+Turn the Dell Copilot key into a launcher for any app, URL, or command on Linux.
 
-## What this does
+## Why this repo exists
 
-- Uses `keyd` to intercept the Copilot combo observed on Dell XPS systems.
-- Launches the target app in the user session, not the root terminal.
-- Includes logging and a rollback path.
+This machine-specific setup documents the exact path that worked on a Dell XPS under Zorin/GNOME.
+It captures the research, the working combo, and the scripts needed so the next person does not have to repeat the trial-and-error.
 
-## Current proven mapping
+## What it does
 
-On this machine, the Copilot key produced:
+- Uses `keyd` to intercept the Copilot combo.
+- Launches the target in the user session, not as root.
+- Includes logs, install, uninstall, and a future-proof customization path.
+
+## Working combo on this machine
+
+The Copilot key produced:
 
 ```text
 leftshift + leftmeta + f23
 ```
 
-Current launcher target:
+Current target:
 
 ```text
 /opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=fmpnliohjhemenmnlpbfagaolkdacoja
 ```
 
-## Install
+## Quick start
 
 ```bash
 chmod +x install.sh
 sudo ./install.sh
 ```
 
-## Change target app
+## Change the target app
 
-Edit `install.sh` and change `TARGET_COMMAND`, or run:
+Pass a different command at install time:
 
 ```bash
 sudo ./install.sh 'your-command-here'
@@ -64,7 +69,15 @@ chmod +x uninstall.sh
 sudo ./uninstall.sh
 ```
 
-## Notes
+## Troubleshooting
 
 - If Settings opens instead of your app, clear GNOME conflicts in `gsettings` and restart `keyd`.
-- If the key does nothing, verify the combo with `sudo keyd monitor`.
+- If nothing happens, verify the combo with `sudo keyd monitor`.
+- If the app only opens while a terminal is open, the launcher is not using the user session correctly.
+
+## Files
+
+- `install.sh` - installs and wires up the mapping
+- `uninstall.sh` - removes the mapping and launcher
+- `keyd-default.conf.example` - reference config
+- `README.md` - this guide
