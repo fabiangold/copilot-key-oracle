@@ -2,20 +2,14 @@
 
 > 🌐 English | [🇩🇪 Deutsch](./docs/README.de.md) | [🇪🇸 Español](./docs/README.es.md) | [🇫🇷 Français](./docs/README.fr.md) | [🇵🇹 Português](./docs/README.pt.md) | [🇵🇱 Polski](./docs/README.pl.md) | [📚 Translations](./TRANSLATIONS.md)
 
-⚡ Turn the Dell Copilot key into a launcher for any app, URL, or command on Linux.
+Turn the Dell Copilot key into a launcher for any app, URL, or command on Linux.
 
 [![Release](https://img.shields.io/github/v/release/fabiangold/copilot-key-oracle)](https://github.com/fabiangold/copilot-key-oracle/releases)
 [![Downloads](https://img.shields.io/github/downloads/fabiangold/copilot-key-oracle/total)](https://github.com/fabiangold/copilot-key-oracle/releases)
 
-## Preview
+## Install
 
-```text
-Copilot key -> keyd -> user session launcher -> your app
-```
-
-![Flow diagram](./docs/assets/flow.svg)
-
-## TL;DR
+### From Git
 
 ```bash
 git clone https://github.com/fabiangold/copilot-key-oracle.git
@@ -24,46 +18,22 @@ chmod +x install.sh
 sudo ./install.sh
 ```
 
-## Community
-
-💬 Discord: [fg-dev](https://discord.gg/fg-dev)
-
-## Packages
-
-- Debian package: download the `.deb` from [Releases](https://github.com/fabiangold/copilot-key-oracle/releases)
-- Source archive: download the `.tar.gz` from [Releases](https://github.com/fabiangold/copilot-key-oracle/releases)
-- Source install: use `install.sh`
-
-> Note: this repo ships packages via GitHub Releases, not the GitHub Packages tab.
-
-## Build from source package
+### From downloaded files
 
 ```bash
-bash packaging/deb/build.sh
+chmod +x install.sh
+sudo ./install.sh
 ```
 
-## Layout
+## How it works
 
-- `install.sh` - wrapper for the real installer
-- `uninstall.sh` - wrapper for the real uninstaller
-- `scripts/` - implementation scripts
-- `examples/` - sample config files
-- `packaging/` - package build helpers
-- `docs/` - all translated READMEs
-- `LICENSE` - project license
+```text
+Copilot key -> keyd -> user-session launcher -> your app
+```
 
-## Why this repo exists
+![Flow diagram](./docs/assets/flow.svg)
 
-This machine-specific setup documents the exact path that worked on a Dell XPS under Zorin/GNOME.
-It captures the research, the working combo, and the scripts needed so the next person does not have to repeat the trial-and-error.
-
-## What it does
-
-- 🔑 Uses `keyd` to intercept the Copilot combo.
-- 🚀 Launches the target in the user session, not as root.
-- 🧰 Includes logs, install, uninstall, and a future-proof customization path.
-
-## Working combo on this machine
+## Working combo
 
 The Copilot key produced:
 
@@ -77,25 +47,7 @@ Current target:
 /opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=fmpnliohjhemenmnlpbfagaolkdacoja
 ```
 
-## Quick start
-
-### Install from Git
-
-```bash
-git clone https://github.com/fabiangold/copilot-key-oracle.git
-cd copilot-key-oracle
-chmod +x install.sh
-sudo ./install.sh
-```
-
-### Install from downloaded files
-
-```bash
-chmod +x install.sh
-sudo ./install.sh
-```
-
-## Change the target app
+## Configure target
 
 Pass a different command at install time:
 
@@ -116,12 +68,12 @@ sudo ./install.sh '/usr/bin/firefox --new-window https://example.com'
 - Install log: `/tmp/copilot-key-oracle-install.log`
 - Launcher log: `/tmp/copilot-key-oracle-launch.log`
 
-## Verify
+## Troubleshooting
 
-```bash
-systemctl is-active keyd
-sudo keyd monitor
-```
+- If Settings opens instead of your app, clear GNOME conflicts in `gsettings` and restart `keyd`.
+- If nothing happens, verify the combo with `sudo keyd monitor`.
+- If the app only opens while a terminal is open, the launcher is not using the user session correctly.
+- Need help? Ask in Discord: [fg-dev](https://discord.gg/fg-dev)
 
 ## Uninstall
 
@@ -130,9 +82,10 @@ chmod +x uninstall.sh
 sudo ./uninstall.sh
 ```
 
-## Troubleshooting
+## Releases
 
-- If Settings opens instead of your app, clear GNOME conflicts in `gsettings` and restart `keyd`.
-- If nothing happens, verify the combo with `sudo keyd monitor`.
-- If the app only opens while a terminal is open, the launcher is not using the user session correctly.
-- Need help? Ask in Discord: [fg-dev](https://discord.gg/fg-dev)
+- Debian package: download the `.deb` from [Releases](https://github.com/fabiangold/copilot-key-oracle/releases)
+- Source archive: download the `.tar.gz` from [Releases](https://github.com/fabiangold/copilot-key-oracle/releases)
+- Source install: use `install.sh`
+- Build locally: `bash packaging/deb/build.sh`
+- Note: this repo ships packages via GitHub Releases, not the GitHub Packages tab.

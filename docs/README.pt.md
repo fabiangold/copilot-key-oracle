@@ -2,20 +2,14 @@
 
 > 🌐 Português | [🇬🇧 English](../README.md) | [🇩🇪 Deutsch](./README.de.md) | [🇪🇸 Español](./README.es.md) | [🇫🇷 Français](./README.fr.md) | [🇵🇱 Polski](./README.pl.md) | [📚 Translations](../TRANSLATIONS.md)
 
-⚡ Transforme a tecla Copilot da Dell em um launcher para qualquer app, URL ou comando no Linux.
+Transforme a tecla Copilot da Dell em um launcher para qualquer app, URL ou comando no Linux.
 
 [![Release](https://img.shields.io/github/v/release/fabiangold/copilot-key-oracle)](https://github.com/fabiangold/copilot-key-oracle/releases)
 [![Downloads](https://img.shields.io/github/downloads/fabiangold/copilot-key-oracle/total)](https://github.com/fabiangold/copilot-key-oracle/releases)
 
-## Previa
+## Instalação
 
-```text
-Tecla Copilot -> keyd -> launcher do usuario -> seu app
-```
-
-![Diagrama de fluxo](./assets/flow.svg)
-
-## TL;DR
+### Via Git
 
 ```bash
 git clone https://github.com/fabiangold/copilot-key-oracle.git
@@ -24,46 +18,22 @@ chmod +x install.sh
 sudo ./install.sh
 ```
 
-## Comunidade
-
-💬 Discord: [fg-dev](https://discord.gg/fg-dev)
-
-## Pacotes
-
-- Pacote Debian: baixe o `.deb` em [Releases](https://github.com/fabiangold/copilot-key-oracle/releases)
-- Arquivo fonte: baixe o `.tar.gz` em [Releases](https://github.com/fabiangold/copilot-key-oracle/releases)
-- Instalação a partir do código: use `install.sh`
-
-> Observação: este repo distribui pacotes via GitHub Releases, não pela aba GitHub Packages.
-
-## Construir a partir do pacote fonte
+### Via arquivos baixados
 
 ```bash
-bash packaging/deb/build.sh
+chmod +x install.sh
+sudo ./install.sh
 ```
 
-## Layout
+## Como funciona
 
-- `install.sh` - wrapper para o instalador real
-- `uninstall.sh` - wrapper para o desinstalador real
-- `scripts/` - scripts de implementação
-- `examples/` - arquivos de exemplo de configuração
-- `packaging/` - ajuda para gerar pacotes
-- `docs/` - todas as traduções
-- `LICENSE` - licença do projeto
+```text
+Tecla Copilot -> keyd -> launcher do usuario -> seu app
+```
 
-## Por que este repo existe
+![Diagrama de fluxo](./assets/flow.svg)
 
-Esta configuracao especifica da maquina documenta o caminho exato que funcionou em um Dell XPS com Zorin/GNOME.
-Ela reúne a pesquisa, a combinacao que funcionou e os scripts para que a proxima pessoa nao precise repetir os testes.
-
-## O que faz
-
-- 🔑 Usa `keyd` para interceptar a combinacao Copilot.
-- 🚀 Abre o alvo na sessao do usuario, nao como root.
-- 🧰 Inclui logs, instalacao, desinstalacao e um caminho de personalizacao pronto para o futuro.
-
-## Combinacao que funciona nesta maquina
+## Combinação que funciona
 
 A tecla Copilot produziu:
 
@@ -77,25 +47,7 @@ Alvo atual:
 /opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=fmpnliohjhemenmnlpbfagaolkdacoja
 ```
 
-## Inicio rapido
-
-### Instalar via Git
-
-```bash
-git clone https://github.com/fabiangold/copilot-key-oracle.git
-cd copilot-key-oracle
-chmod +x install.sh
-sudo ./install.sh
-```
-
-### Instalar a partir de arquivos baixados
-
-```bash
-chmod +x install.sh
-sudo ./install.sh
-```
-
-## Trocar o app alvo
+## Configurar o alvo
 
 Passe um comando diferente na instalacao:
 
@@ -116,12 +68,12 @@ sudo ./install.sh '/usr/bin/firefox --new-window https://example.com'
 - Log de instalacao: `/tmp/copilot-key-oracle-install.log`
 - Log do launcher: `/tmp/copilot-key-oracle-launch.log`
 
-## Verificar
+## Solucao de problemas
 
-```bash
-systemctl is-active keyd
-sudo keyd monitor
-```
+- Se abrir Configuracoes em vez do app, limpe conflitos do GNOME em `gsettings` e reinicie o `keyd`.
+- Se nada acontecer, verifique a combinacao com `sudo keyd monitor`.
+- Se o app so abrir com o terminal aberto, o launcher nao esta usando corretamente a sessao do usuario.
+- Precisa de ajuda? Pergunte no Discord: [fg-dev](https://discord.gg/fg-dev)
 
 ## Desinstalar
 
@@ -130,9 +82,10 @@ chmod +x uninstall.sh
 sudo ./uninstall.sh
 ```
 
-## Solucao de problemas
+## Releases
 
-- Se abrir Configuracoes em vez do app, limpe conflitos do GNOME em `gsettings` e reinicie o `keyd`.
-- Se nada acontecer, verifique a combinacao com `sudo keyd monitor`.
-- Se o app so abrir com o terminal aberto, o launcher nao esta usando corretamente a sessao do usuario.
-- Precisa de ajuda? Pergunte no Discord: [fg-dev](https://discord.gg/fg-dev)
+- Pacote Debian: baixe o `.deb` em [Releases](https://github.com/fabiangold/copilot-key-oracle/releases)
+- Arquivo fonte: baixe o `.tar.gz` em [Releases](https://github.com/fabiangold/copilot-key-oracle/releases)
+- Instalação a partir do código: use `install.sh`
+- Build local: `bash packaging/deb/build.sh`
+- Observação: este repo distribui pacotes via GitHub Releases, não pela aba GitHub Packages.
