@@ -2,7 +2,7 @@
 
 > Français | [English](./README.md) | [Deutsch](./README.de.md) | [Español](./README.es.md) | [Português](./README.pt.md) | [Polski](./README.pl.md)
 
-Transforme la touche Copilot Dell en lanceur pour n'importe quelle application, URL ou commande sous Linux.
+⚡ Transforme la touche Copilot Dell en lanceur pour n'importe quelle application, URL ou commande sous Linux.
 
 ## TL;DR
 
@@ -12,6 +12,10 @@ cd copilot-key-oracle
 chmod +x install.sh
 sudo ./install.sh
 ```
+
+## Communauté
+
+💬 Discord : [fg-dev](https://discord.gg/fg-dev)
 
 ## Versions linguistiques
 
@@ -29,9 +33,9 @@ Elle regroupe la recherche, la combinaison gagnante et les scripts nécessaires 
 
 ## Ce que cela fait
 
-- Utilise `keyd` pour intercepter la combinaison Copilot.
-- Lance la cible dans la session utilisateur, pas en root.
-- Inclut les logs, l'installation, la désinstallation et une voie de personnalisation.
+- 🔑 Utilise `keyd` pour intercepter la combinaison Copilot.
+- 🚀 Lance la cible dans la session utilisateur, pas en root.
+- 🧰 Inclut les logs, l'installation, la désinstallation et une voie de personnalisation.
 
 ## Combinaison détectée
 

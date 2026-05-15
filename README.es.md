@@ -2,7 +2,7 @@
 
 > Español | [English](./README.md) | [Deutsch](./README.de.md) | [Français](./README.fr.md) | [Português](./README.pt.md) | [Polski](./README.pl.md)
 
-Convierte la tecla Copilot de Dell en un lanzador para cualquier app, URL o comando en Linux.
+⚡ Convierte la tecla Copilot de Dell en un lanzador para cualquier app, URL o comando en Linux.
 
 ## TL;DR
 
@@ -12,6 +12,10 @@ cd copilot-key-oracle
 chmod +x install.sh
 sudo ./install.sh
 ```
+
+## Comunidad
+
+💬 Discord: [fg-dev](https://discord.gg/fg-dev)
 
 ## Versión de idioma
 
@@ -29,9 +33,9 @@ Incluye la investigación, la combinación que funciona y los scripts necesarios
 
 ## Qué hace
 
-- Usa `keyd` para interceptar la combinación Copilot.
-- Lanza la app en la sesión del usuario, no como root.
-- Incluye logs, instalación, desinstalación y una ruta de personalización.
+- 🔑 Usa `keyd` para interceptar la combinación Copilot.
+- 🚀 Lanza la app en la sesión del usuario, no como root.
+- 🧰 Incluye logs, instalación, desinstalación y una ruta de personalización.
 
 ## Combinación detectada
 

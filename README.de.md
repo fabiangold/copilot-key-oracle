@@ -2,7 +2,7 @@
 
 > Deutsch | [English](./README.md) | [Español](./README.es.md) | [Français](./README.fr.md) | [Português](./README.pt.md) | [Polski](./README.pl.md)
 
-Verwandle die Dell-Copilot-Taste unter Linux in einen Startknopf fuer beliebige Apps, URLs oder Befehle.
+⚡ Verwandle die Dell-Copilot-Taste unter Linux in einen Startknopf fuer beliebige Apps, URLs oder Befehle.
 
 ## TL;DR
 
@@ -12,6 +12,10 @@ cd copilot-key-oracle
 chmod +x install.sh
 sudo ./install.sh
 ```
+
+## Community
+
+💬 Discord: [fg-dev](https://discord.gg/fg-dev)
 
 ## Sprachversionen
 
@@ -29,9 +33,9 @@ Sie enthaelt die Recherche, die funktionierende Tastenkombination und die Skript
 
 ## Was es macht
 
-- Nutzt `keyd`, um die Copilot-Kombination abzufangen.
-- Startet das Ziel im User-Session-Kontext, nicht als root.
-- Bringt Logs, Install, Uninstall und einen klaren Anpassungsweg mit.
+- 🔑 Nutzt `keyd`, um die Copilot-Kombination abzufangen.
+- 🚀 Startet das Ziel im User-Session-Kontext, nicht als root.
+- 🧰 Bringt Logs, Install, Uninstall und einen klaren Anpassungsweg mit.
 
 ## Funktionierende Kombination auf diesem System
 

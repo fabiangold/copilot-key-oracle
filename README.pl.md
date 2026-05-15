@@ -2,7 +2,7 @@
 
 > Polski | [English](./README.md) | [Deutsch](./README.de.md) | [Español](./README.es.md) | [Français](./README.fr.md) | [Português](./README.pt.md)
 
-Zamien klawisz Copilot z Dell w uruchamiacz dowolnej aplikacji, URL lub polecenia w Linux.
+⚡ Zamien klawisz Copilot z Dell w uruchamiacz dowolnej aplikacji, URL lub polecenia w Linux.
 
 ## TL;DR
 
@@ -12,6 +12,10 @@ cd copilot-key-oracle
 chmod +x install.sh
 sudo ./install.sh
 ```
+
+## Spolecznosc
+
+💬 Discord: [fg-dev](https://discord.gg/fg-dev)
 
 ## Wersje jezykowe
 
@@ -29,9 +33,9 @@ Zawiera badania, dzialajacy skrót i skrypty, zeby nikt nie musial przechodzic p
 
 ## Co robi
 
-- Uzywa `keyd`, aby przechwycic kombinacje Copilot.
-- Uruchamia cel w sesji uzytkownika, nie jako root.
-- Zawiera logi, instalacje, deinstalacje i mozliwosc latwej zmiany celu.
+- 🔑 Uzywa `keyd`, aby przechwycic kombinacje Copilot.
+- 🚀 Uruchamia cel w sesji uzytkownika, nie jako root.
+- 🧰 Zawiera logi, instalacje, deinstalacje i mozliwosc latwej zmiany celu.
 
 ## Wykryta kombinacja
 

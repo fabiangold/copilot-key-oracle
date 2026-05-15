@@ -2,7 +2,7 @@
 
 > English | [Deutsch](./README.de.md) | [Español](./README.es.md) | [Français](./README.fr.md) | [Português](./README.pt.md) | [Polski](./README.pl.md)
 
-Turn the Dell Copilot key into a launcher for any app, URL, or command on Linux.
+⚡ Turn the Dell Copilot key into a launcher for any app, URL, or command on Linux.
 
 ## TL;DR
 
@@ -12,6 +12,10 @@ cd copilot-key-oracle
 chmod +x install.sh
 sudo ./install.sh
 ```
+
+## Community
+
+💬 Discord: [fg-dev](https://discord.gg/fg-dev)
 
 ## Language versions
 
@@ -29,9 +33,9 @@ It captures the research, the working combo, and the scripts needed so the next 
 
 ## What it does
 
-- Uses `keyd` to intercept the Copilot combo.
-- Launches the target in the user session, not as root.
-- Includes logs, install, uninstall, and a future-proof customization path.
+- 🔑 Uses `keyd` to intercept the Copilot combo.
+- 🚀 Launches the target in the user session, not as root.
+- 🧰 Includes logs, install, uninstall, and a future-proof customization path.
 
 ## Working combo on this machine
 
