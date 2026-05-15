@@ -1,0 +1,6 @@
+[ids]
+*
+
+[main]
+# Dell Copilot combo as observed on this machine
+leftshift+leftmeta+f23 = command(/usr/local/bin/copilot-app-launcher)
