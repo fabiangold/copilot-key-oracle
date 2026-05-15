@@ -1,5 +1,7 @@
 # Copilot Key Oracle
 
+> [Deutsch](./README.de.md) | English
+
 Turn the Dell Copilot key into a launcher for any app, URL, or command on Linux.
 
 ## Why this repo exists
@@ -80,4 +82,5 @@ sudo ./uninstall.sh
 - `install.sh` - installs and wires up the mapping
 - `uninstall.sh` - removes the mapping and launcher
 - `keyd-default.conf.example` - reference config
+- `README.de.md` - German guide
 - `README.md` - this guide
