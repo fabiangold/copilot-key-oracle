@@ -17,6 +17,11 @@ sudo ./install.sh
 
 💬 Discord: [fg-dev](https://discord.gg/fg-dev)
 
+## Paquetes
+
+- Paquete Debian: descarga el `.deb` desde los [Releases](https://github.com/fabiangold/copilot-key-oracle/releases)
+- Instalación desde código: usa `install.sh`
+
 ## Versiones de idioma
 
 - English: `README.md`

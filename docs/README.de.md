@@ -4,6 +4,8 @@
 
 ⚡ Verwandle die Dell-Copilot-Taste unter Linux in einen Startknopf fuer beliebige Apps, URLs oder Befehle.
 
+[![Release](https://img.shields.io/github/v/release/fabiangold/copilot-key-oracle)](https://github.com/fabiangold/copilot-key-oracle/releases)
+
 ## TL;DR
 
 ```bash
@@ -16,6 +18,16 @@ sudo ./install.sh
 ## Community
 
 💬 Discord: [fg-dev](https://discord.gg/fg-dev)
+
+## Pakete
+
+- Debian-Paket: lade die `.deb`-Datei aus den [Releases](https://github.com/fabiangold/copilot-key-oracle/releases) herunter
+- Source-Install: nutze `install.sh`
+
+## Pakete
+
+- Debian-Paket: lade die `.deb`-Datei aus den [Releases](https://github.com/fabiangold/copilot-key-oracle/releases) herunter
+- Source-Install: nutze `install.sh`
 
 ## Sprachversionen
 

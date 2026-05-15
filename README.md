@@ -4,6 +4,9 @@
 
 ⚡ Turn the Dell Copilot key into a launcher for any app, URL, or command on Linux.
 
+[![Release](https://img.shields.io/github/v/release/fabiangold/copilot-key-oracle)](https://github.com/fabiangold/copilot-key-oracle/releases)
+[![Downloads](https://img.shields.io/github/downloads/fabiangold/copilot-key-oracle/total)](https://github.com/fabiangold/copilot-key-oracle/releases)
+
 ## TL;DR
 
 ```bash
@@ -17,12 +20,18 @@ sudo ./install.sh
 
 💬 Discord: [fg-dev](https://discord.gg/fg-dev)
 
+## Packages
+
+- Debian package: download the `.deb` from [Releases](https://github.com/fabiangold/copilot-key-oracle/releases)
+- Source install: use `install.sh`
+
 ## Layout
 
 - `install.sh` - wrapper for the real installer
 - `uninstall.sh` - wrapper for the real uninstaller
 - `scripts/` - implementation scripts
 - `examples/` - sample config files
+- `packaging/` - package build helpers
 - `docs/` - all translated READMEs
 - `LICENSE` - project license
 
@@ -125,6 +134,7 @@ sudo ./uninstall.sh
 - `uninstall.sh` - entrypoint wrapper
 - `scripts/install.sh` - installs and wires up the mapping
 - `scripts/uninstall.sh` - removes the mapping and launcher
+- `packaging/deb/build.sh` - builds the Debian package
 - `examples/keyd-default.conf.example` - reference config
 - `docs/README.de.md` - German guide
 - `README.md` - this guide
